@@ -105,7 +105,7 @@ def buscar_por_autor_editorial_genero():
             if dato5.lower() == objLibro.genero:
                 objLibro.entregarDatos()
 
-#OPCIÓN 8 OBSERVACIÓN
+#OPCIÓN 8 NO FUNCIONA
 
 def buscar_num_autores():
     print('\nBuscar por número de autores\n')
@@ -135,7 +135,7 @@ def modificarDatos():
             objLibro.editarLibros(titulo, genero, ISBN, editorial, autores)
             objLibro.entregarDatos()
 
-#OPCIÓN 10 OBSERVACIÓN
+#OPCIÓN 10 NO FUNCIONA
 
 def guardarLibros():
     with open ('libros,csv', 'w', newline='') as file:
@@ -159,7 +159,7 @@ while True:
     print('Opción 10: Guardar libros en archivo de disco duro')
     print('Opcion 11: Salir\n')
 
-# Por ahora solo se colocará un print en cada opción, luego agregar módulos
+# Estructura de opciones
 
     opcion = int(input('Inserte el número de la opción: '))
     if opcion == 1:
@@ -185,4 +185,4 @@ while True:
     elif opcion == 11:
         break
     else:
-        int(input('Opción equivocada, por favor escriba una opción del 1 al 11: '))
+        opcion = int(input('Opción equivocada, por favor escriba una opción del 1 al 11: '))
